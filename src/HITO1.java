@@ -38,6 +38,20 @@ public class HITO1 extends JFrame {
         getContentPane().add(panel2, BorderLayout.EAST);
 
 
+
+        ImageIcon imagen = new ImageIcon("photo.jpg");
+        JLabel label1 = new JLabel(imagen);
+        JLabel label2 = new JLabel(imagen);
+        JLabel label3 = new JLabel(imagen);
+        JLabel label4 = new JLabel(imagen);
+        JPanel imagePanel = new JPanel(new GridLayout(2, 2));
+        imagePanel.add(label1);
+        imagePanel.add(label2);
+        imagePanel.add(label3);
+        imagePanel.add(label4);
+        getContentPane().add(imagePanel, BorderLayout.CENTER);
+
+
         pack();
         setVisible(true);
     }
