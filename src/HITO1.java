@@ -9,6 +9,14 @@ public class HITO1 extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 
+        JPanel checkboxPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JCheckBox c1 = new JCheckBox("Katniss");
+        checkboxPanel.add(c1);
+        JCheckBox c2 = new JCheckBox("Peeta");
+        checkboxPanel.add(c2);
+        getContentPane().add(checkboxPanel,BorderLayout.NORTH);
+
+
         pack();
         setVisible(true);
     }
