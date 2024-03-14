@@ -61,7 +61,6 @@ public class HITO1 extends JFrame {
         panel3.add(boton2);
         getContentPane().add(panel3,BorderLayout.SOUTH);
 
-
         pack();
         setVisible(true);
     }
