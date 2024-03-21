@@ -22,6 +22,17 @@ public class HITO2 extends JFrame {
         button1.setBounds(370,10,70,25);
         getContentPane().add(button1);
 
+        JTextArea jt = new JTextArea(25,25);
+        jt.setEditable(false);
+
+        JScrollPane jScrollPane = new JScrollPane();
+        jScrollPane.setViewportView(jt);
+        jScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        jScrollPane.setPreferredSize(new Dimension (200, 200));
+        jScrollPane.setBounds(500,10,350,350);
+        getContentPane().add(jScrollPane);
+
         pack();
         setVisible(true);
     }
