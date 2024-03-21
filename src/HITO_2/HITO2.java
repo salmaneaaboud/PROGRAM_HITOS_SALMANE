@@ -2,8 +2,10 @@ package HITO_2;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class HITO2 extends JFrame {
+public class HITO2 extends JFrame implements ActionListener {
 
     public HITO2(){
         super("Test Events: Files");
@@ -33,12 +35,21 @@ public class HITO2 extends JFrame {
         jScrollPane.setBounds(500,10,350,350);
         getContentPane().add(jScrollPane);
 
+        JButton cerrar = new JButton("Close");
+        cerrar.setBounds(500,375,70,25);
+        cerrar.addActionListener(this);
+        getContentPane().add(cerrar);
+
         pack();
         setVisible(true);
     }
 
-
     public static void main(String[] args) {
         new HITO2();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        dispose();
     }
 }
