@@ -16,7 +16,7 @@ public class HITO2 extends JFrame implements ActionListener {
         super("Test Events: Files");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
-        setPreferredSize(new Dimension(1000,450));
+        setPreferredSize(new Dimension(900,450));
 
         JComboBox<String> combo1=new JComboBox<String>();
         combo1.setBounds(60,10,300,25);
@@ -35,6 +35,7 @@ public class HITO2 extends JFrame implements ActionListener {
 
         jt = new JTextArea(25,25);
         jt.setEditable(false);
+        jt.setLineWrap(true);
 
         JScrollPane jScrollPane = new JScrollPane();
         jScrollPane.setViewportView(jt);
